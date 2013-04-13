@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<title>5cCourseReviews</title>
+	<link rel="stylesheet" type="text/css" href="../static/reviewStyle.css">
+</head>
+<body>
+	<div class="page">
+		<h1>Write a Review</h1>
+		<h3>Course Name: <input type="text" size = "20" name = "course_name"/></br>
+		Professor Name: <input type="text" size = "20" name = "prof_name"/></h3>
+		<form action="/save" method="POST">
+			<p>Overall rating (1 to 5 stars): 1<input type="radio" name="overall" value="1" /><input type="radio" name="overall" value="2" /><input type="radio" name="overall" value="3" /><input type="radio" name="overall" value="4" /><input type="radio" name="overall" value="5" />5</p>
+
+
+			<p>How many hours per week did you spend on homework for this course? : <input type="text" size="5" name="time_spent"></p>
+			<p>Please rate the class and professor on the following criteria(1 to 5 stars):</p>
+			<table>
+				<tr>
+				<td><h4>How useful was this course?<h4/></td>
+				<td>1<input type="radio" name="q1" value="1" /><input type="radio" name="q1" value="2" /><input type="radio" name="q1" value="3" /><input type="radio" name="q1" value="4" /><input type="radio" name="q1" value="5" />5</p></td>
+				</tr>
+				<tr>
+				<td><h4>How engaging was the course material?<h4/></td>
+				<td>1<input type="radio" name="q2" value="1" /><input type="radio" name="q2" value="2" /><input type="radio" name="q2" value="3" /><input type="radio" name="q2" value="4" /><input type="radio" name="q2" value="5" />5</p></td>
+				</tr>
+				<tr>
+				<td><h4>How difficult was this course?<h4/></td>
+				<td>1<input type="radio" name="q3" value="1" /><input type="radio" name="q3" value="2" /><input type="radio" name="q3" value="3" /><input type="radio" name="q3" value="4" /><input type="radio" name="q3" value="5" />5</p></td>
+				</tr>
+				<tr>
+				<td><h4>How knowledgeable was this professor?<h4/></td>
+				<td>1<input type="radio" name="q4" value="1" /><input type="radio" name="q4" value="2" /><input type="radio" name="q4" value="3" /><input type="radio" name="q4" value="4" /><input type="radio" name="q4" value="5" />5</p></td>
+				</tr>
+				<tr>
+				<td><h4>How engaging was this professor's lecturing style?<h4/></td>
+				<td>1<input type="radio" name="q5" value="1" /><input type="radio" name="q5" value="2" /><input type="radio" name="q5" value="3" /><input type="radio" name="q5" value="4" /><input type="radio" name="q5" value="5" />5</p></td>
+				</tr>
+				<tr>
+				<td><h4>How approachable was this professor?<h4/></td>
+				<td>1<input type="radio" name="q6" value="1" /><input type="radio" name="q6" value="2" /><input type="radio" name="q6" value="3" /><input type="radio" name="q6" value="4" /><input type="radio" name="q6" value="5" />5</p></td>
+				</tr>
+			</table>
+
+			<p>Comments:<br/>
+			<textarea name="comments" rows="10" cols="60"></textarea></p>
+
+		<input type="submit" size="30" name="submit_button" value="Submit"/> 
+	</form>
+
+	</div>
+</body>
+</html>

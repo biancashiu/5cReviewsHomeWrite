@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>5C Course Review</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css"/>
+</head>
+<body>
+<div class="page">
+
+    <img width='550px' height='250px' src="../static/ClaremontConsort.jpg" />
+
+    <h1>5C Course Review</h1>
+                
+    <h2>Search</h2>
+    <form action="/results" method="POST" class="search-box">
+        <input type="text" size="30" placeholder="5C School" name="term">
+        <input type="submit" value="Search">
+    <form action="/results" method="POST" class="search-box">
+        <input type="text" size="20" placeholder="Department" name="location">
+        <input type="submit" value="Search">
+    </form>
+
+    <h2>Browse</h2>
+    <ul class='entries'>
+
+        <li>
+            <div>
+                <h4 class='entry-title'><a href="http://www.yelp.com/biz/aruffos-italian-cuisine-claremont">Browse Departments</a></h4>
+    <h2>Reviews</h2>
+    <ul class='entries'>
+
+        <li>
+            <div>
+                <h4 class='entry-title'><a href="/write">Write your own review</a></h4>
+        
+            </div>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>
